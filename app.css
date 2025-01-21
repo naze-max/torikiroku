@@ -1,0 +1,140 @@
+/* 全体のスタイル */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* フォームスタイル */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ヘッダーのスタイル */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ラベルのスタイル */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* 入力フィールドとセレクトボックス */
+input, select, textarea {
+    width: 100%;
+    max-width: 500px;  /* 最大幅を500pxに変更 */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* ボタンのスタイル */
+button {
+    padding: 10px 20px;
+    margin: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+/* データ項目を囲むコンテナ */
+.data-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* 幅を100%に設定して親要素に合わせる */
+    max-width: 700px; /* 最大幅を700pxに設定 */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* データ項目を中央揃え */
+}
+
+/* 画像のスタイル */
+.data-item img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 10px;
+}
+
+/* サムネイル画像のスタイル */
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* リンクのスタイル */
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 保存されたデータ項目を中央寄せにする */
+#birdList {
+    display: flex;
+    flex-wrap: wrap; /* 複数行に分けて表示 */
+    justify-content: center; /* アイテムを中央寄せ */
+    gap: 20px; /* アイテム間に余白を追加 */
+}
+
+/* 編集・削除ボタンのスタイル */
+.data-item .buttons {
+    display: flex;
+    justify-content: flex-end; /* ボタンを右寄せ */
+    gap: 10px; /* ボタン間に余白を追加 */
+    width: 100%; /* ボタンが親要素全体に配置されるようにする */
+}
+
+/* ボタンの追加スタイル */
+button {
+    background-color: #4CAF50; /* 緑色 */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}

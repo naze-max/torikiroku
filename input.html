@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鳥の情報入力</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <h1>鳥の情報入力</h1>
+
+    <form id="birdForm">
+        <label for="birdName">鳥の名前:</label>
+        <input type="text" id="birdName" name="birdName" required>
+
+        <label for="province">都道府県:</label>
+        <input type="text" id="province" name="province" required>
+
+        <label for="city">市区町村:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="location">ロケーション:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="date">日付:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="birdPhoto">写真:</label>
+        <input type="file" id="birdPhoto" name="birdPhoto" accept="image/*">
+
+        <button type="submit">保存</button>
+    </form>
+
+    <p><a href="view.html">保存したデータを見る</a></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
